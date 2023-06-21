@@ -1,0 +1,340 @@
+
+* {
+    font-family: 'Atlas Grotesk';
+    font-size: 9pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11pt;
+}
+
+
+/* introduction */
+
+
+.introduction-images {
+    page: chapitre;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduction-images p {
+    width: 20%;
+    margin: 5mm;
+    padding: 0;
+}
+
+.introduction-images img {
+    width: 100%;
+}
+
+.introduction-images figcaption {
+    font-size: 6pt;
+    text-align: center;
+    transform-origin: 2mm 2mm;
+    transform: rotate(90deg);
+}
+
+
+/* chapitre */
+
+
+.chapitre {
+    page: chapitre;
+    break-after: page;
+    break-before: page;
+}
+
+.chapitre h1 {
+    string-set: chapTitle content(text);
+    font-size: 20pt;
+    line-height: 23pt;
+    margin-bottom: 20mm;
+    break-after: page;
+}
+
+.chapitre p {
+    text-indent: 10mm;
+    margin-bottom: 0;
+    font-size: 13pt;
+    line-height: 16pt;
+}
+
+.chapitre ul {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.chapitre li {
+    font-size: 13pt;
+    line-height: 16pt;
+    margin-top: 5mm;
+    margin-left: 10mm;
+    list-style: none;
+    padding: 0;
+}
+
+.chapitre ul li::before {
+    content: "• ";
+    font-weight: 500;
+}
+
+/* table of content */
+
+
+.table-of-content {
+    page: chapitre;
+    break-after: page;
+    break-before: page;
+    
+}
+
+.table-of-content h1 {
+    margin-bottom: 5mm;
+}
+
+.table-of-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.table-of-content li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.table-of-content p {
+    margin-bottom: 1mm;
+    margin-top: 0;
+    font-size: 9pt;
+    line-height: 11pt;
+}
+
+
+/* projet */
+
+
+.projet p {
+    margin-bottom: 0;
+    line-height: 11pt;
+}
+
+.projet h1, h2 {
+    font-size: 13pt;
+    line-height: 16pt;
+    break-before: page;
+    width: 80%;
+    margin-bottom: 10mm;
+}
+
+.projet h3 {
+    font-size: 13pt;
+    line-height: 16pt;
+    width: 80%;
+    margin-top: 5mm;
+    /* margin-bottom: 5mm; */
+    text-decoration: underline;
+    break-before: page;
+}
+
+.projet h4 {
+    font-size: 9pt;
+    font-weight: 500;
+    line-height: 11pt;
+    width: 100%;
+    /* margin-top: 5mm; */
+    margin-bottom: 2mm;
+}
+
+.projet h5 {
+    font-size: 9pt;
+    /* font-weight: 500; */
+    line-height: 11pt;
+    width: 100%;
+    /* margin-top: 5mm; */
+    margin-bottom: 2mm;
+}
+
+.projet img {
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 5mm;
+    border: solid blue 0.2mm;
+}
+
+.projet figcaption {
+    font-size: 8pt;
+    text-align: center;
+    margin-top: 2mm;
+    margin-bottom: 5mm;
+}
+
+.projet em {
+    font-style: italic;
+    text-indent: 0;
+    margin-bottom: 0;
+    line-height: 11pt;
+}
+
+.projet strong {
+    font-weight: 500;
+}
+
+.projet blockquote {
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+.projet blockquote p {
+    font-size: 9pt;
+    line-height: 11pt;
+    font-style: italic;
+
+    text-indent: 0mm;
+    margin: 0;
+    padding: 0;
+}
+
+.projet ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projet li { 
+    margin-top: 2mm;
+    padding: 0;
+    margin-left: 5mm;
+}
+
+.projet ul li::before {
+    content: "• ";
+    font-weight: 500;
+}
+
+.projet a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+
+/* article */
+
+
+.article h1 {
+    font-size: 13pt;
+    font-weight: 500;
+    line-height: 16pt;
+    break-before: page;
+    width: 80%;
+    margin-bottom: 20mm;
+}
+
+.article h2 {
+    font-size: 13pt;
+    line-height: 16pt;
+    break-before: page;
+    width: 80%;
+    margin-bottom: 5mm;
+}
+
+.article h3 {
+    font-size: 13pt;
+    line-height: 16pt;
+    width: 100%;
+    width: 80%;
+    margin-top: 10mm;
+    margin-bottom: 5mm;
+}
+
+.article h2 em {
+    font-size: 13pt;
+    line-height: 16pt;
+    font-style: italic;
+}
+
+.article h4 {
+    font-size: 9pt;
+    font-weight: 500;
+    line-height: 11pt;
+    width: 100%;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+}
+
+.article em {
+    font-style: italic;
+    text-indent: 0;
+    margin-bottom: 0;
+    line-height: 11pt;
+}
+
+.article strong {
+    font-weight: 500;
+}
+
+.article blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.article blockquote p {
+    text-indent: 0mm;
+    margin: 0;
+    padding: 0;
+}
+
+.article ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.article li { 
+    margin-top: 2mm;
+    padding: 0;
+    margin-left: 10mm;
+}
+
+.article ul li::before {
+    content: "• ";
+    font-weight: 500;
+}
+
+.article p {
+    /* text-indent: 10mm; */
+    margin-bottom: 0;
+    line-height: 11pt;
+}
+
+.article img {
+    width: 50%;
+    margin: auto;
+    display: block;
+    margin-top: 10mm;
+    border: solid green 0.2mm;
+}
+
+.article figcaption {
+    font-size: 8pt;
+    text-align: center;
+    margin-top: 2mm;
+    margin-bottom: 5mm;
+}
+
+.article a {
+    color: black;
+    text-decoration: none;
+}
+
+.logos img {
+    border: 0;
+    width: 100%;
+    margin: auto;
+    display: block;
+}

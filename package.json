@@ -1,0 +1,36 @@
+{
+  "name": "pub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm install pagedjs && copy 'node_modules/pagedjs/dist/*' 'dist/js/pagedjs' && copy 'node_modules/hyphenopoly/**' 'dist/js/hyphenopoly/'",
+    "dev": "nodemon app.js",
+    "build:html": "node app.js",
+    "build:copy": "copy 'src/**' 'dist/'",
+    "build:css": "postcss src/css/book.css -o dist/css/book.css",
+    "all": "(npm run build:html & npm run build:css & npm run build:copy)",
+    "serve": "serve -p 9000 dist"
+  },
+  "devDependencies": {
+    "copy": "^0.3.2",
+    "nodemon": "^2.0.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.0.1",
+    "serve": "^14.1.2"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "express": "^4.18.2",
+    "front-matter": "^4.0.2",
+    "hyphenopoly": "^3.0.1",
+    "luxon": "^3.3.0",
+    "marked": "^4.2.12",
+    "pagedjs": "^0.4.1",
+    "postcss": "^8.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
