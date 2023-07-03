@@ -59,6 +59,12 @@
     line-height: 16pt;
 }
 
+.chapitre a {
+    font-size: 13pt;
+    line-height: 16pt;
+    color: black;
+}
+
 .chapitre ul {
     padding: 0;
     margin: 0;
@@ -117,7 +123,7 @@
 
 .projet p {
     margin-bottom: 0;
-    line-height: 11pt;
+    line-height: 13pt;
 }
 
 .projet h1, h2 {
@@ -264,7 +270,7 @@
     line-height: 11pt;
     width: 100%;
     margin-top: 5mm;
-    margin-bottom: 5mm;
+    /* margin-bottom: 5mm; */
 }
 
 .article em {
@@ -309,7 +315,7 @@
 .article p {
     /* text-indent: 10mm; */
     margin-bottom: 0;
-    line-height: 11pt;
+    line-height: 13pt;
 }
 
 .article img {
@@ -330,6 +336,10 @@
 .article a {
     color: black;
     text-decoration: none;
+}
+
+.article sup {
+
 }
 
 .logos img {

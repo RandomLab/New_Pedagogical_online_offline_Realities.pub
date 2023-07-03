@@ -1,8 +1,8 @@
 @page {
     size : 130mm 195mm;
     margin: 15mm;
-    marks: crop;
-    bleed: 3.18mm;
+    /* marks: crop; */
+    /* bleed: 3.18mm; */
 }
 
 @page:first {

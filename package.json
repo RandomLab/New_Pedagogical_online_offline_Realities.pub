@@ -27,7 +27,7 @@
     "hyphenopoly": "^3.0.1",
     "luxon": "^3.3.0",
     "marked": "^4.2.12",
-    "pagedjs": "^0.4.1",
+    "pagedjs": "^0.4.2",
     "postcss": "^8.0.0"
   },
   "keywords": [],
