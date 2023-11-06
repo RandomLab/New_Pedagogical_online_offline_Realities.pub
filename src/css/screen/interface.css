@@ -2,11 +2,15 @@
 :root {
     --color-paper: white;
     --color-pageBox: grey;
+    --color-background: grey;
 }
+
 @media screen {
+
     body {
         background-color: var(--color-background);
     }
+    
     .pagedjs_pages {
         display: flex;
         width: calc(var(--pagedjs-pagebox-width) * 2);
@@ -46,8 +50,5 @@
         margin: 0 auto;
         margin-top: 10mm;
     } 
-
-
-   
 
 }

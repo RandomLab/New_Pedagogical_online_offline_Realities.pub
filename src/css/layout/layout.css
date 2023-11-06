@@ -2,10 +2,15 @@
 * {
     font-family: 'Atlas Grotesk';
     font-size: 9pt;
+    line-height: 11pt;
     font-style: normal;
     font-weight: 400;
     line-height: 11pt;
 }
+
+/* img {
+    filter: grayscale(100) contrast(125%);
+} */
 
 
 /* introduction */
@@ -46,8 +51,8 @@
 
 .chapitre h1 {
     string-set: chapTitle content(text);
-    font-size: 20pt;
-    line-height: 23pt;
+    font-size: 16pt;
+    line-height: 19pt;
     margin-bottom: 20mm;
     break-after: page;
 }
@@ -55,14 +60,15 @@
 .chapitre p {
     text-indent: 10mm;
     margin-bottom: 0;
-    font-size: 13pt;
-    line-height: 16pt;
+    font-size: 11pt;
+    line-height: 14pt;
 }
 
 .chapitre a {
-    font-size: 13pt;
-    line-height: 16pt;
+    font-size: 11pt;
+    line-height: 14pt;
     color: black;
+    text-decoration: none;
 }
 
 .chapitre ul {
@@ -72,8 +78,8 @@
 }
 
 .chapitre li {
-    font-size: 13pt;
-    line-height: 16pt;
+    font-size: 11pt;
+    line-height: 14pt;
     margin-top: 5mm;
     margin-left: 10mm;
     list-style: none;
@@ -96,7 +102,8 @@
 }
 
 .table-of-content h1 {
-    margin-bottom: 5mm;
+    margin-bottom: 2mm;
+    font-weight: 500;
 }
 
 .table-of-content ul {
@@ -107,7 +114,7 @@
 .table-of-content li {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: 2mm;
 }
 
 .table-of-content p {
@@ -123,6 +130,8 @@
 
 .projet p {
     margin-bottom: 0;
+    margin-top: 0;
+    font-size:9pt;
     line-height: 13pt;
 }
 
@@ -131,7 +140,7 @@
     line-height: 16pt;
     break-before: page;
     width: 80%;
-    margin-bottom: 10mm;
+    margin-bottom: 5mm;
 }
 
 .projet h3 {
@@ -149,8 +158,8 @@
     font-weight: 500;
     line-height: 11pt;
     width: 100%;
-    /* margin-top: 5mm; */
-    margin-bottom: 2mm;
+    margin-top: 5mm;
+    margin-bottom: 0;
 }
 
 .projet h5 {
@@ -163,11 +172,10 @@
 }
 
 .projet img {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: block;
     margin-top: 5mm;
-    border: solid blue 0.2mm;
 }
 
 .projet figcaption {
@@ -181,6 +189,7 @@
     font-style: italic;
     text-indent: 0;
     margin-bottom: 0;
+    font-size:9pt;
     line-height: 11pt;
 }
 
@@ -189,17 +198,14 @@
 }
 
 .projet blockquote {
-    
     margin: 0;
     padding: 0;
-
 }
 
 .projet blockquote p {
     font-size: 9pt;
     line-height: 11pt;
     font-style: italic;
-
     text-indent: 0mm;
     margin: 0;
     padding: 0;
@@ -250,12 +256,18 @@
 }
 
 .article h3 {
-    font-size: 13pt;
-    line-height: 16pt;
+    font-size: 11pt;
+    line-height: 13pt;
     width: 100%;
     width: 80%;
-    margin-top: 10mm;
-    margin-bottom: 5mm;
+    margin-top: 5mm;
+    /*margin-bottom: 5mm;*/
+}
+
+.artile h3 em {
+    font-size: 11pt;
+    line-height: 13pt;
+    font-style: italic;
 }
 
 .article h2 em {
@@ -271,13 +283,14 @@
     width: 100%;
     margin-top: 5mm;
     /* margin-bottom: 5mm; */
+    margin: 0;
 }
 
 .article em {
     font-style: italic;
     text-indent: 0;
     margin-bottom: 0;
-    line-height: 11pt;
+    font-size: 9pt;
 }
 
 .article strong {
@@ -301,10 +314,43 @@
     padding: 0;
 }
 
+.article ol {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.article ol li {
+     font-size: 7pt;
+     line-height: 8.5pt;
+}
+
 .article li { 
     margin-top: 2mm;
     padding: 0;
-    margin-left: 10mm;
+    margin-left: 5mm;
+    font-size:9pt;
+    line-height:13pt;
+}
+
+.article ul li a, em {
+    font-size:9pt;
+    line-height:13pt;
+}
+
+.article ol li p {
+    font-size: 7pt;
+    line-height: 8.5pt;
+}
+
+.article ol li p a {
+    font-size: 7pt;
+    line-height: 8.5pt;
+}
+
+.article ol li p em {
+    font-size: 7pt;
+    line-height: 8.5pt;
 }
 
 .article ul li::before {
@@ -314,16 +360,21 @@
 
 .article p {
     /* text-indent: 10mm; */
-    margin-bottom: 0;
+    /*margin-bottom: 0px;*/
+    font-size: 9pt;
+    margin-top: 0;
     line-height: 13pt;
 }
 
+.article a {
+    font-size: 9pt;
+}
+
 .article img {
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: block;
     margin-top: 10mm;
-    border: solid green 0.2mm;
 }
 
 .article figcaption {
@@ -336,10 +387,6 @@
 .article a {
     color: black;
     text-decoration: none;
-}
-
-.article sup {
-
 }
 
 .logos img {

@@ -18,7 +18,7 @@
     "nodemon": "^2.0.20",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.0.1",
-    "serve": "^14.1.2"
+    "serve": "^14.2.1"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
@@ -27,7 +27,7 @@
     "hyphenopoly": "^3.0.1",
     "luxon": "^3.3.0",
     "marked": "^4.2.12",
-    "pagedjs": "^0.4.2",
+    "pagedjs": "^0.4.3",
     "postcss": "^8.0.0"
   },
   "keywords": [],
