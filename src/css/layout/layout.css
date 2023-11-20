@@ -213,14 +213,19 @@
 
 .projet ul {
     list-style: none;
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5mm;
 }
 
 .projet li { 
     margin-top: 2mm;
     padding: 0;
     margin-left: 5mm;
+    /* margin-bottom: 10mm; */
 }
 
 .projet ul li::before {
@@ -298,8 +303,12 @@
 }
 
 .article blockquote {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5mm;
 }
 
 .article blockquote p {
@@ -310,8 +319,12 @@
 
 .article ul {
     list-style: none;
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5mm;
 }
 
 .article ol {
