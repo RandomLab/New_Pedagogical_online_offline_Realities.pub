@@ -1,0 +1,3 @@
+gs -sDEVICE=pdfwrite -dOverrideICC=true -sOutputICCProfile=/usr/share/color/icc/FOGRA30L.ti3 -sColorConversionStrategy=CMYK -dProcessColorModel=/DeviceCMYK -dRenderIntent=3 -dDeviceGrayToK=true -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed_PDF_file.pdf input_PDF_file.pdf
+
+gs -sDEVICE=pdfwrite -dOverrideICC=true -sOutputICCProfile=/usr/share/color/icc/FOGRA30L.ti3 -sColorConversionStrategy=CMYK -dProcessColorModel=/DeviceCMYK -dRenderIntent=3 -dDeviceGrayToK=true -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed_PDF_file.pdf input_PDF_file.pdf

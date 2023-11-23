@@ -47,6 +47,7 @@
     page: chapitre;
     break-after: page;
     break-before: page;
+    hyphens: none;
 }
 
 .chapitre h1 {
@@ -74,7 +75,7 @@
 .chapitre ul {
     padding: 0;
     margin: 0;
-    
+
 }
 
 .chapitre li {
@@ -91,6 +92,10 @@
     font-weight: 500;
 }
 
+.chapitre blockquote {
+  margin-left: 0;
+}
+
 /* table of content */
 
 
@@ -98,7 +103,7 @@
     page: chapitre;
     break-after: page;
     break-before: page;
-    
+    hyphens: none;
 }
 
 .table-of-content h1 {
@@ -133,6 +138,7 @@
     margin-top: 0;
     font-size:9pt;
     line-height: 13pt;
+    hyphens: auto;
 }
 
 .projet h1, h2 {
@@ -185,6 +191,11 @@
     margin-bottom: 5mm;
 }
 
+.projet i {
+    font-size: 8pt;
+    font-style: italic;
+}
+
 .projet em {
     font-style: italic;
     text-indent: 0;
@@ -221,7 +232,7 @@
     margin-bottom: 5mm;
 }
 
-.projet li { 
+.projet li {
     margin-top: 2mm;
     padding: 0;
     margin-left: 5mm;
@@ -291,6 +302,8 @@
     margin: 0;
 }
 
+
+
 .article em {
     font-style: italic;
     text-indent: 0;
@@ -330,7 +343,7 @@
 .article ol {
     margin: 0;
     padding: 0;
-   
+
 }
 
 .article ol li {
@@ -338,7 +351,7 @@
      line-height: 8.5pt;
 }
 
-.article li { 
+.article li {
     margin-top: 2mm;
     padding: 0;
     margin-left: 5mm;
@@ -377,6 +390,11 @@
     font-size: 9pt;
     margin-top: 0;
     line-height: 13pt;
+    hyphens: auto;
+}
+
+.article sup {
+  font-size: 7pt;
 }
 
 .article a {
@@ -395,6 +413,11 @@
     text-align: center;
     margin-top: 2mm;
     margin-bottom: 5mm;
+}
+
+.article i {
+    font-style: italic;
+    font-size: 8pt;
 }
 
 .article a {

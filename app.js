@@ -11,11 +11,11 @@ import { config } from './config.js'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 
-/* ------------------- 
+/* -------------------
 index
-----------------------*/ 
+----------------------*/
 
-const indexHtml = (pages) => { 
+const indexHtml = (pages) => {
     return `<!DOCTYPE html>
     <html>
         <head>
@@ -40,7 +40,8 @@ const indexHtml = (pages) => {
                 hide: "none",
                 selectors: {
                 "p, li, blockquote": {
-                }
+                    minWordLength: 12
+                  }
                 }
             },
             handleEvent: {
@@ -60,8 +61,8 @@ const indexHtml = (pages) => {
 
 
         <body>
-        
-        ${pages.join('')}   
+
+        ${pages.join('')}
 
         </body>
 
@@ -95,19 +96,19 @@ const articlesHtml = (data) => {
         ${ marked(data.body) }
     </div>`)
   }
-  
+
 const createPost = postPath => {
     const data = fs.readFileSync(postPath, "utf8")
     const content = fm(data)
-    const article = articlesHtml(content)      
+    const article = articlesHtml(content)
     return article
   }
 
 const getAllFiles = (dirPath, arrayOfFiles) => {
     const files = fs.readdirSync(dirPath)
-  
+
     arrayOfFiles = arrayOfFiles || []
-  
+
     files.forEach((file) => {
       if (fs.statSync(dirPath + "/" + file).isDirectory()) {
         arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles)
@@ -125,7 +126,7 @@ const getAllFiles = (dirPath, arrayOfFiles) => {
         }
       }
     })
-  
+
     return arrayOfFiles
 }
 
@@ -139,16 +140,16 @@ const getAllPages = (arrayOfArticles, allPages) => {
         const post = createPost(postMd)
         allPages.push(post)
     })
-    
+
     return allPages
 
 }
 
 const finalPage = getAllPages(result)
 
-/* ------------------- 
+/* -------------------
 on enregistre le fichier index
-----------------------*/ 
+----------------------*/
 
 const index = indexHtml(finalPage)
 
