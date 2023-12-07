@@ -65,6 +65,11 @@
     line-height: 14pt;
 }
 
+.chapitre em {
+    font-size: 11pt;
+    font-style: italic;
+}
+
 .chapitre a {
     font-size: 11pt;
     line-height: 14pt;
